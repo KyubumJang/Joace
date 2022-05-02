@@ -3,12 +3,9 @@
     <HeaderComponents/>
     <main>
       <div class="w3-container">
-        <h1>This is an about page</h1>
         <ul class="item-title">
-          <li v-for="items in AboutInfo" :key="items">
-            <span v-for="item in items" :key="item">
-              {{ item }}
-            </span>
+          <li v-for="item in AboutInfo[0].items" :key="item">
+            주요 연구:{{item.itemTitle}} || 상세내용: {{item.itemDescription}}
           </li>
         </ul>
       </div>
@@ -51,5 +48,9 @@ export default {
 </script>
 
 <style scoped>
-
+.item-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 </style>
