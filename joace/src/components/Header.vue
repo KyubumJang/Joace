@@ -1,10 +1,7 @@
 <template>
-  <header class="w3-container" id="item-list-header">
+  <header class="w3-container">
     <div class="header" :class="{ 'header--hidden': !showHeader }">
       <h1>JOACE</h1>
-    </div>
-    <div class="sub-header">
-      <h2>Happiness lies in the joy of achievement and the thrill of creative effort!</h2>
     </div>
   </header>
 </template>
@@ -64,11 +61,5 @@ export default {
 .header.header--hidden {
   box-shadow: none;
   transform: translate3d(0, -100%, 0);
-}
-
-#item-list-header div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 </style>

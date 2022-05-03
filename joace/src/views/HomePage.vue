@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <HeaderComponents />
+    <SubHeaderComponents />
     <img alt="Home Logo" src="../assets/HomeLogo.png"/>
     <div>
       <router-link :to="{name: 'AboutPage'}">
@@ -12,10 +13,12 @@
 
 <script>
 import HeaderComponents from '../components/Header.vue'
+import SubHeaderComponents from '../components/SubHeader.vue'
 export default {
   name: 'HomePage',
   components: {
     HeaderComponents,
+    SubHeaderComponents
   },
 };
 </script>
