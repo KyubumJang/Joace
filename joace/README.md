@@ -1,5 +1,5 @@
 # joace
-
+- vuex 적용
 ## Project setup
 ```
 yarn install
